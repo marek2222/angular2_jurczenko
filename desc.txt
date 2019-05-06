@@ -1,0 +1,33 @@
+
+------------------------------
+------------------------------
+------------------------------
+------------------------------
+------------------------------
+------------------------------
+------------------------------
+------------------------------
+------------------------------
+
+
+------------------------------
+1.1: Creating the Angular application using AngularCLI
+
+  My version:
+$ dotnet --version    2.1.603
+$ node --version      8.11.4
+$ npm --version       6.9.0
+
+  In DatingApp directory install angular globally in version 6.0.8:
+$ npm install -g @angular/cli@6.0.8
+$ dir
+$ ng new projectAngular
+$ cd projectAngular
+
+  Lets change in  package.json line:
+"rxjs": "^6.0.0",   ->   "rxjs": "6.0.0",
+	and run:
+$ npm update
+	and run the application by:
+$ ng serve
+	Open link: http://localhost:4200/ in your browser.
