@@ -8,15 +8,37 @@
 ------------------------------
 ------------------------------
 ------------------------------
-1.2: Tworzenie listy zadań todolist:  
-  Utworzenie nowego komponentu:
-    $ ng generate component todolist  
-  lub
-    $ ng g        component todolist
-  Komponent zagnieżdzam w app.component.html:
-    <app-todolist>Loading...</app-todolist>
+Angular 6 Template Driven Form – NgModel for Two-Way Data Binding by grokonez.com:
+  https://grokonez.com/frontend/angular/angular-6/angular-6-template-driven-form-ngmodel-for-two-way-data-binding
+
+    $ npm install -g @angular/cli@6.0.8
+
+  Generate Angular project:
+    $ ng new grokonez1
+  Lets change in  package.json line:
+    "rxjs": "^6.0.0",   ->   "rxjs": "6.0.0",
+  and run:
+    $ npm update
+  and run the application by:
+    $ ng serve
+  Open link: http://localhost:4200/ in your browser.
+
+  Generate:
+    Customer Component
+      $ ng g component customer 
+    Customer Class
+      $ ng g class customer
+
+  Install Bootstrap 4 and jquery:
+    $ npm install bootstrap jquery --save
+    + bootstrap@4.3.1
+    + jquery@3.4.1
 
     
+
+  
+
+
 
 
 ------------------------------
