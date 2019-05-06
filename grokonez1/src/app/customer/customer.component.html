@@ -1,23 +1,35 @@
+	
 <div>
   <h2>Customer Form</h2>
-  <form>
+  <form #customerForm="ngForm">
+
     <div class="form-group">
       <label for="name">Name</label>
-      <input type="text" class="form-control" id="name">
+      <input type="text" class="form-control" id="name" 
+        required 
+        [(ngModel)]="customer.name" name="name" >
     </div>
     
     <div class="form-group">
       <label for="age">Age</label>
-      <input type="text" class="form-control" id="age">
+      <input type="text" class="form-control" id="age"
+        [(ngModel)]="customer.age" name="age" >
     </div>
     
     <div class="form-group">
       <label for="nationality">Nationality</label>
-      <select class="form-control" id="nationality" required>
-        <option *ngFor="let nationality of nationalities" [value]="nationality">{{ nationality }}</option>
+      <select class="form-control" id="nationality" 
+        required 
+        [(ngModel)]="customer.nationality" name="nationality" >
+        <option *ngFor="let nationality of nationalities" [value]="nationality">
+          {{ nationality }}</option>
       </select>
     </div>
     
     <button type="submit" class="btn btn-success">Submit</button>
   </form>
+</div>
+
+<div>
+  {{customer | json}}
 </div>
