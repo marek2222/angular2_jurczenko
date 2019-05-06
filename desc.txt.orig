@@ -7,8 +7,6 @@
 ------------------------------
 ------------------------------
 ------------------------------
-
-------------------------------
 1.2: Tworzenie listy zadań todolist:  
   Utworzenie nowego komponentu:
     $ ng generate component todolist  
@@ -18,7 +16,6 @@
     <app-todolist>Loading...</app-todolist>
 
     
-
 
 ------------------------------
 Angular 6 Template Driven Form – NgModel for Two-Way Data Binding by grokonez.com:
