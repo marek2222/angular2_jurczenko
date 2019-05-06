@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 import { Customer } from '../customer';
 
 @Component({
@@ -8,9 +7,10 @@ import { Customer } from '../customer';
   styleUrls: ['./customer.component.css']
 })
 export class CustomerComponent {
+
   nationalities = ['', 'United States', 'United Kingdom', 'Iceland', 'South Korea'];
 
-  customer = new Customer(1, '', '', 23);
+  customer = new Customer(1,'','',23);
 
   submitted = false;
 
